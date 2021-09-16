@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChildren } from '@ang
 import { FormBuilder, FormControl, FormControlName, FormGroup, Validators } from '@angular/forms';
 import { NgBrazilValidators } from 'ng-brazil';
 import { Usuario } from './models/usuario';
-import { utilsBr } from 'js-brasil'
+import { utilsBr } from 'js-brasil';
 import { CustomValidators } from 'ng2-validation';
 import { DisplayMessage, GenericValidator, ValidationMessages } from './generic-forms-validation';
 import { fromEvent, merge, Observable } from 'rxjs';
@@ -82,8 +82,7 @@ export class CadastroComponent implements OnInit, AfterViewInit {
       this.mudancasNaoSalvas = true;
     });
   }
-
-
+  
 
   adicionarUsuario() {
     if (this.cadastroForm.dirty && this.cadastroForm.valid) {
